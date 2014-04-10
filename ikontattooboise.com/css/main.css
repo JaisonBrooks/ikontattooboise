@@ -1,0 +1,148 @@
+/* ==========================================================================
+ Author's custom styles
+ ========================================================================== */
+body {
+	background-image: url('../img/12.jpg'), url('../img/t7.jpg'), url('../img/t4.jpg');
+    /*
+    background-repeat: repeat-x, repeat;
+           */
+    
+	/*background-attachment: fixed;*/
+	background-repeat: repeat, repeat-x;
+	color: #8F8F8F;
+	font-family: 'Homenaje', sans-serif;
+}
+
+/*
+/*body {
+    background-image: url('../img/t6.jpg'), url('../img/t7.jpg');
+    background-repeat: repeat-x, repeat;
+}*/
+
+
+
+#navbar_links {
+	font-family: 'testing_font' Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+.navigation_links:hover {
+	text-decoration:underline;
+}
+
+
+#index_container {
+	margin-bottom: 30px;
+	background-color: rgba(255, 255, 255, 0);
+	color: #fff;
+}
+#subheader {
+	color: #a5a5a5;
+	font-family: 'Italianno';
+}
+
+#top_container {
+	margin-top: 30px;
+}
+
+#about_container {
+	margin-bottom: 30px;
+	background-color: rgba(138,148,153, 0.9);
+	color: #444444;
+	font-size: 2em;
+	border-radius: 10px;
+	padding: 30px;
+}
+
+#about_container:hover {
+	-moz-box-shadow: inset 0 8px 8px -8px #696868, inset 0 -8px 8px -8px #696868;
+	-webkit-box-shadow: inset 0 8px 8px -8px #696868, inset 0 -8px 8px -8px #696868;
+	box-shadow: inset 0 8px 8px -8px #696868, inset 0 -8px 8px -8px #696868;
+	background-color: rgba(138,148,153, .95);
+}
+
+#location_container {
+	margin-bottom: 30px;
+	background-color: rgba(184,197,204, 0.9);
+	color: #444444;
+}
+#location_container:hover {
+	background-color: rgba(184,197,204, 0.95);
+}
+#artwork_cantainer {
+	/*margin-bottom: -30px;*/
+	background-color: rgba(68,68,68, 0.9);
+	color: #ACB6C3;
+}
+#artist_container:hover {
+	background-color: rgba(68,68,68, 0.95);
+}
+
+#artist_container {
+	/*margin-bottom: -30px;*/
+	background-color: rgba(171,171,171, 0.9);
+	color: #444444;
+}
+#artist_container:hover {
+	background-color: rgba(171,171,171, 0.95);
+}
+
+#map_canvas {
+	border-color: #333;
+	border-width: 1px;
+	border-style: dotted;
+	width: 100%;
+	height: 400px;
+	text-align: center;
+	display: inline-block;
+}
+
+a:active {
+	text-decoration: underline;
+}
+a:hover {
+	text-decoration: line-through;
+}
+
+#nav_contact_call:hover {
+	color: #5cb85c;
+	text-decoration:overline;
+}
+
+#nav_contact_direction:hover {
+	color: #428bca;
+	text-decoration:overline;
+}
+#nav_contact_email:hover {
+	color: #f0ad4e;
+	text-decoration:overline;
+}
+
+#nav_contact_facebook:hover {
+	color: #5bc0de;
+	text-decoration:overline;
+}
+#nav_contact_google:hover {
+	color: #d9534f;
+	text-decoration:overline;
+}
+#navigation_core {
+	border-bottom: #333;
+	border-style: solid;
+	background: rgba(0,0,0, .7);
+}
+#navigation_core:hover {
+	background: rgba(0,0,0, .9);
+}
+#nav_header:hover {
+	color: rgba(255, 255, 255, 1);
+}
+
+.about {
+	font-family: 'Italianno', cursive;
+	size: 2em;
+}
+.about_h1 {
+	font-family: 'Italianno', cursive;
+	size: 1.5em;
+}
+

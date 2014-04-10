@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+	<!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>IkonTattooBoise - home</title>
+		<meta name="description" content="">
+		<meta name="author" content="Jaisonbrooks">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		<!--
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+		<script>
+		window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>');
+		</script>
+		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+		<script>
+		window.jQuery.ui || document.write('<script src="/js/jquery-ui-1.10.3.min.js"><\/script>');
+		</script> -->
+		<style>
+			#map_canvas {
+				width: 100%;
+				height: 400px;
+				margin: 0 auto;
+			}
+			#pano {
+				width: 100%;
+				height: 400px;
+			}
+
+		</style>
+		<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+		<script>
+			// function initialize() {
+			// var map_canvas = document.getElementById('map_canvas');
+			// var map_options = {
+			// center : new google.maps.LatLng(44.5403, -78.5463),
+			// zoom : 8,
+			// mapTypeId : google.maps.MapTypeId.ROADMAP
+			// }
+			// var map = new google.maps.Map(map_canvas, map_options)
+			// }
+			//
+			//
+			// google.maps.event.addDomListener(window, 'load', initialize);
+			function initialize() {
+				var fenway = new google.maps.LatLng(43.62016, -116.212665);
+				var mapOptions = {
+					center : fenway,
+					zoom : 15
+				};
+				var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+				var panoramaOptions = {
+					position : fenway,
+					pov : {
+						heading : 220,
+						pitch : 07
+					}
+				};
+				var panorama = new google.maps.StreetViewPanorama(document.getElementById('pano'), panoramaOptions);
+				map.setStreetView(panorama);
+			}
+
+
+			google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="css/plusgallery.css">
+		<link rel="stylesheet" href="css/fonts.css">
+
+		<link href='http://fonts.googleapis.com/css?family=Homenaje|Italianno' rel='stylesheet' type='text/css'>
+
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+
+		<div id="index_container" class="jumbotron">
+			<div class="container" id="top_container">
+				<div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="navigation_core">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<!-- <a class="navbar-brand" href="http://getbootstrap.com/examples/navbar/#">Ikon Tattoo</a> -->
+						</div>
+						<!-- Static navbar -->
+						<div class="navbar-collapse collapse">
+							<ul id="navbar_links" class="nav navbar-nav">
+								<li id="nav_header">
+									<a href="#">IKON Tattoo</a>
+								</li>
+								<li>
+									<a class="navigation_links" href="#index_container">Home</a>
+								</li>
+								<li>
+									<a class="navigation_links" href="#about_container">About Us</a>
+								</li>
+								<li>
+									<a class="navigation_links" href="#location_container">Location</a>
+								</li>
+								<li>
+									<a class="navigation_links" href="#artwork_cantainer">Gallery</a>
+								</li>
+								<li>
+									<a class="navigation_links" href="#artist_container">Artists</a>
+								</li>
+								<li class="dropdown">
+									<a href="http://getbootstrap.com/examples/navbar/#" class="dropdown-toggle" data-toggle="dropdown">More <b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li class="dropdown-header">
+											Extra Stuff
+										</li>
+										<li>
+											<a href="#" target="_blank">Someones Facebook</a>
+										</li>
+										<li>
+											<a href="#" target="_blank">Photo thread</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<ul class="nav navbar-nav navbar-right">
+								<li>
+									<a id="nav_contact_call" href="tel:1-208-388-4566">Call 208.388.4566</a>
+								</li>
+								<li>
+									<a id="nav_contact_email" href="mailto:ikontattooboise@gmail.com?subject=IkonTattooBoise.com" target="_blank" >Email</a>
+								</li>
+								<li>
+									<a id="nav_contact_direction" href="https://www.google.com/maps/preview?q=1519+1/2+Main+Street+Boise,+ID+83702%E2%80%8E" target="_blank">Directions</a>
+								</li>
+								<li>
+									<a id="nav_contact_facebook" href="https://www.facebook.com/IkonTattooBoise" target="_blank">Facebook</a>
+								</li>
+								<li>
+									<a id="nav_contact_google" href="https://plus.google.com/117521958590156221685/about" target="_blank">Google + </a>
+								</li>
+							</ul>
+						</div><!--/.nav-collapse -->
+					</div><!--/.container-fluid -->
+				</div>
+
+				<h1 style="font-size: 4.5em; font-family: 'testing_font'">Ikon Tattoo<small style="color:#5A5A5A;">- Boise, ID</small></h1>
+
+				<p id="subheader"class="lead" style="font-size: 2em;">
+					"Tattoos and Body piercing in a clean, friendly and affordable shop in downtown boise"
+				</p>
+			</div>
+		</div>
+
+	<!--	<div id="about_container" class="jumbotron">-->
+			<div class="container" id="about_container" style="text-align: right;">
+				<h1 class="about" style="font-family: 'Italianno', cursive; font-size: 4.5em;  ">About Us</h1>
+				<p >
+					We are a local boise tattoo shop that does great and affordable tattoo's and piercings. We are very clean, respectful and resonable.
+
+					<br/>
+					<br/>
+				<p>
+					<b>Hours of Operation</b>
+				</p>
+				<p>
+					Sun-Thursday: 1-8pm
+					Fri-Saturday: 1-Midnight
+				</p>
+			</div>
+			<div class="row" style="text-align: center;"></div>
+			<!--
+			<p>
+			<a class="btn btn-primary btn-lg">Learn more &raquo;</a>
+			</p>-->
+		<!--</div>-->
+
+		<div id="location_container" class="jumbotron">
+			<div class="container" style="text-align: center;">
+				<h1 id="location"style="font-family: 'Italianno', cursive; font-size: 4.5em;">Our Location</h1>
+				<p>
+					Come on down and see us! | 1519 1/2 Main Street Boise, ID 83702‎
+				</p>
+
+				<div class="row">
+					<div class="col-xs-6">
+						<div id="map_canvas" style="margin: 0 auto;"></div>
+					</div>
+					<div class="col-xs-6">
+						<div id="pano" style=" margin: 0 auto; border-color: #E5E5E5; border-width: 1px; width: 100%; border-style: dotted;  display: inline-block"></div></p>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div id="artwork_cantainer" class="jumbotron">
+			<div class="container" style="text-align: left;">
+				<h1 style="font-family: 'Italianno', cursive; font-size: 4.5em;" >Some of our Artwork</h1>
+				<p>
+					This is boilerplate text for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
+				</p>
+				<div id="rssincl-box-container-850113"></div>
+			</div>
+		</div>
+
+		<div id="artist_container" class="jumbotron">
+			<div class="container" style="text-align: right;">
+				<h1>Artists!</h1>
+				<p>
+					This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
+				</p>
+				<p>
+					<a class="btn btn-primary btn-lg">Learn more &raquo;</a>
+				</p>
+			</div>
+		</div>
+
+		<div class="container">
+
+			<footer>
+				<p>
+					&copy; Copyright Ikon Tattoo Boise
+				</p>
+			</footer>
+
+		</div>
+
+		<script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<script>
+			window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')
+		</script>
+
+		<script src="js/vendor/bootstrap.min.js"></script>
+
+		<script src="js/main.js"></script>
+
+		<script type="text/javascript">
+			(function() {
+				var s = document.createElement('script');
+				s.type = 'text/javascript';
+				s.async = true;
+				s.src = 'http://output61.rssinclude.com/output?type=asyncjs&id=850113&hash=60a81fac5ac4e8020cda0c08d581c179';
+				document.getElementsByTagName('head')[0].appendChild(s);
+			})();
+		</script>
+
+		<!-- <script>
+		var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
+		( function(d, t) {
+		var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+		g.src = '//www.google-analytics.com/ga.js';
+		s.parentNode.insertBefore(g, s)
+		}(document, 'script'));
+		</script> -->
+	</body>
+</html>
